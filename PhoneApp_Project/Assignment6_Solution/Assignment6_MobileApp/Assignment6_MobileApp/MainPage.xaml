@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment6_MobileApp.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Maroon" Padding="5" CornerRadius="0">
+                <Label Text="Assignment 6 Mobile App Development"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White" FontSize="10"/>
+            </Frame>
+            <Label FontSize="20" Text="Service 1: Adding"/>
+            <Label FontSize="12" Text="Enter a number:"/>
+            <Entry x:Name="Num1Entry"/>
+            <Label FontSize="12" Text="Enter another number"/>
+            <Entry x:Name="Num2Entry"/>
+            <Button x:Name="Add_btn" Text="Add Them Together!" Clicked="Add_Clicked"/>
+            <Label FontSize="12" Text="Result = " x:Name="ResultLabel"/>
+
+            <Label FontSize="20" Text="Service 2: Random String Generator"/>
+            <Label FontSize="12" Text="Enter the length of the string to be generated:"/>
+            <Entry x:Name="NumEntry"/>
+            <Button x:Name="Generate_btn" Text="Generate String" Clicked="Generate_Clicked"/>
+            <Label FontSize="12" Text="Generated string:" x:Name="GeneratedResult"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
